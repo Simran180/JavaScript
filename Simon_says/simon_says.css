@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+}
+.child{
+    border: 10px solid black;
+    border-radius: 20%;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+.child1{
+    background-color: #219C90;
+}
+.child2{
+    background-color: #E9B824;
+}
+.child3{
+    background-color: gray;
+}
+.child4{
+    background-color:#D83F31;
+}
+.flash{
+    background-color: white;
+}

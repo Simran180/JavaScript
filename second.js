@@ -1,3 +1,6 @@
+//DIFFERENCE BETWEEN JAVASCRIPT AND TYPESCRIPT:
+//typescript is static typed and javascript is dynamic typed
+//TEMPLATE LITERALS ARE USED TO ADD EMBEDDED EXPRESSIONS IN A STRING
 //METHODS:
 //1 TRIM METHOD:
 let password = prompt("Enter your password");
@@ -20,13 +23,14 @@ console.log(strs);
 //SLICE:
 let msg = "hello";
 console.log(msg.slice(2));
-console.log(msg.slice(1,3));// 1th,2nd indexes last index is not considered
+console.log(msg.slice(1,3));// 1st,2nd indexes last index is not considered
 //slice(-1) = slice(string.length()-1);
 console.log(msg.slice(-2));
 //REPLACE:
 console.log(msg.replace("l","t"));
 //first occurence is replaced
 //REPEAT: to repeat n number of times
+console.log("REPEAT:")
 console.log(msg.repeat("2"));
 msg = "        help!";
 console.log(msg.trim().toUpperCase());
@@ -55,7 +59,7 @@ student[6] = "9";
 //splice(starting_index,delete_count,item0---itemN)
 //change the original array
 student.push(3);
-student.unshift(4);
+student.unshift(4); //adding in beginning
 console.log(student.indexOf("simran"));
 console.log(student.includes("kritika"));
 console.log(student.includes("oooo"));
@@ -86,3 +90,25 @@ console.log(primary.splice(0,1,"kritika"));
 console.log(primary);
 //slice don't make any change in 
 //original array but splice does
+//sort:
+primary.sort();
+console.log(primary);
+
+//Array References: address in memory
+//in case of string value and types are same
+//but in case of array their references are different
+//array's name is called as reference variable that stores the address of the first element of the array
+//while comparing it is storing index of two different locations that is why it give different values
+console.log("name" == "name");
+console.log("name" == "name");
+console.log([1] == [1]);
+console.log([1]===[1]);
+console.log([] == []);
+let myarr = [1,2,3];
+let myarr2 = myarr;
+console.log(myarr2==myarr)//true as address are same
+//CONSTANT ARRAY: we can push change value but we can't change the referncew of the array i.e array1 = [44,...] is not possible
+const array1 = [11,2,3,3];
+console.log(array1);
+array1[0] = 1;
+console.log(array1);
